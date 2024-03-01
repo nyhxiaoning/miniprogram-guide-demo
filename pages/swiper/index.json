@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "my-swiper":"../../component/swiper/index",
+        "my-swiper-item": "../../component/swiper-item/index"
+    }
+  }

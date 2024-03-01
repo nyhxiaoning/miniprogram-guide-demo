@@ -1,0 +1,10 @@
+<view  class="swiper-container {{ directionClass }}" style="{{ style }}" >
+    <view 
+      class="swiper-wrapper"
+      bindtouchstart="handleTouchstart"
+      bindtouchend="handleTouchend"
+      animation="{{ animationData }}"
+     >
+      <slot />
+    </view>
+  </view>

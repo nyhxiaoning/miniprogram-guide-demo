@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "bottom-cart":"./components/bottom-cart/index",
+        "product-cart": "./components/card/index"
+    }
+  }

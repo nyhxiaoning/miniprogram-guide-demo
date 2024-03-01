@@ -1,0 +1,77 @@
+ .ui-modal-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    word-break: break-all;
+  }
+  .ui-modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+  }
+  .ui-modal-backdrop.open {
+    animation: fade-in 0.2s;
+    animation-fill-mode: forwards;
+  }
+  .ui-modal-backdrop.close {
+    animation: fade-out 0.2s;
+    animation-fill-mode: forwards;
+  }
+  .ui-modal {
+    position: relative;
+    z-index: 1;
+    font-size: 24rpx;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .ui-modal.open {
+    animation: pop-up-modal 0.4s;
+    animation-fill-mode: forwards;
+  }
+  .ui-modal.close {
+    animation: pop-off-modal 0.4s;
+    animation-fill-mode: forwards;
+  }
+  .type-actionsheet .ui-modal {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    border-radius: 24rpx 24rpx 0 0;
+  }
+  .type-actionsheet .ui-modal.type-ipx {
+    padding-bottom: 42rpx;
+  }
+  .type-actionsheet .ui-modal.open {
+    animation: pop-up-bottom 0.4s;
+    animation-fill-mode: forwards;
+  }
+  .type-actionsheet .ui-modal.close {
+    animation: pop-back-bottom 0.4s;
+    animation-fill-mode: forwards;
+  }
+  .ui-modal-close-button {
+    position: absolute;
+    top: 20rpx;
+    right: 24rpx;
+    width: 40rpx;
+    height: 40rpx;
+  }
+  .ui-modal-dialog-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 560rpx;
+  }

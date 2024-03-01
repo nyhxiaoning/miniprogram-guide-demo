@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "long-list-view":"../../component/long-list-view/index",
+    "list-item":"./item/item",
+    "list-skeleton":"./skeleton/skeleton",
+    "behaivor-component":"./behaivor/index",
+    "slot-component":"./slot/index",
+    "slot-test":"./slot-test/index",
+    "container":"./combination/container/index",
+    "container-item":"./combination/container-item/index",
+    "modal":"./manager/index",
+    "custom-button":"./button/index"
+  }
+}

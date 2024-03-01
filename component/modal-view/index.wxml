@@ -1,0 +1,16 @@
+<view
+  class="ui-modal-back type-actionsheet"
+  wx:if="{{modalStatus[modalID]}}"
+  style="z-index:{{zIndex}};"
+>
+  <view
+    class="ui-modal-backdrop"
+    catchtap="handleClickCloseModal"
+  />
+  <view class="ui-modal" style="{{modalStyle}}">
+    <view class="ui-modal-dialog-content" style="background: {{contentBackground}}; border-radius: {{contentRadius}}">
+      <view class="ui-modal-close-button" wx:if="{{ showClose }}" catchtap="handleClickCloseModal"  > x </view>
+      <slot />
+    </view>
+  </view>
+</view>

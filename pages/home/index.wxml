@@ -1,0 +1,68 @@
+<!-- <nav-bar title="应用" ></nav-bar> -->
+<view class="chat">
+	<scroll-view scroll-y="{{true}}" style="height:calc(100% - {{contentHeight}}px);" scroll-with-animation="{{true}}"
+		class="content" id="message" scroll-into-view="item-{{currentItem}}">
+		<view class="content__gutter--top"></view>
+		<view class="header">
+			<image src="{{imageSrc}}" />
+			<view class="title">
+				{{title}}
+			</view>
+		</view>
+		<view class="desc-content">
+			{{content}}
+		</view>
+		<view class="content-box" wx:if="{{contents.length>0}}">
+			<view class="item" wx:for="{{contents}}" wx:key=index" wx:if="{{ index < 2}}" bind:tap="handleAutoFillInput" data-item="{{item}}"  >
+				{{item}}
+			</view>
+		</view>
+		<view wx:for="{{messageList}}" wx:key="id" id="item-{{item.id}}">
+			<message-item data-index="{{index}}" role="{{item.role}}" content="{{item.content}}"
+				finished="{{item.finished}}" bind:share="handleMessageShare" />
+		</view>
+		<message-item role="assistant" id="item-loading" wx:if="{{thinking}}">
+			<div class="bubble">
+				<div class="bubble__circle"></div>
+				<div class="bubble__circle"></div>
+				<div class="bubble__circle"></div>
+			</div>
+
+		</message-item>
+		<view id="item-bottom" class="content__gutter--bottom"></view>
+	</scroll-view>
+	<view class="footer" id="footer" style="bottom: {{fixedTop}}px">
+		<view class="footer__content">
+			<button wx:if="{{thinking}}" class="btn-clear footer__content--clear" bindtap="handleCancel">
+				<t-icon name="close-circle" size="50rpx" color="#C55348" />
+			</button>
+			<button wx:else class="btn-clear footer__content--clear" bindtap="handleClear">
+                <image src="/assets/images/clear.png"/>
+				<!-- <t-icon name="clear" size="50rpx" /> -->
+			</button>
+            <t-textarea
+                value="{{inputValue}}"
+                placeholder="有问题尽管问我......."
+                disabled="{{loading || thinking}}"
+                disableDefaultPadding="{{true}}"
+                autosize="{{autosize}}"
+                bind:line-change="onLineChange"
+                bind:change="handleValueChange"
+                show-confirm-bar="{{false}}"
+                bind:enter="handleSendClick"
+                placeholderStyle="color:#c2c2c2;"
+                confirm-type="send"
+                show-confirm-bar="{{false}}"
+                cursor-spacing="40"
+                t-class="t-input-padding-class"
+          />
+			<!-- <t-input value="{{inputValue}}" t-class="t-input-padding-class" maxlength="{{200}}" confirm-type="send"
+				disabled="{{loading || thinking}}" disableDefaultPadding="{{true}}" show-confirm-bar="{{false}}"
+				adjust-position="{{false}}" clearable bind:keyboardheightchange="handleKeyboardHeightChange"
+				bind:change="handleValueChange" bind:enter="handleSendClick" placeholder="有问题尽管问我......"	placeholder-style="color:#c2c2c2;"  /> -->
+                <button class="btn-clear footer__content--clear send-btn" bindtap="handleSendClick">
+                    <image src="/assets/images/send.png"/>
+                </button>
+		</view>
+	</view>
+</view>

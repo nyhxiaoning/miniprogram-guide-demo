@@ -1,0 +1,12 @@
+function handleStatusColor(status){
+  var color = '#ccc';
+  if(status === 0){
+    color = 'pink';
+  }else if(status === 1){
+    color = 'rgb(193, 192, 255)';
+  };
+  return color;
+};
+module.exports = {
+  handleStatusColor:handleStatusColor,
+};

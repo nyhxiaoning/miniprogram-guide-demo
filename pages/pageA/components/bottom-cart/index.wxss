@@ -1,0 +1,12 @@
+.botton-cart{
+    position: fixed;
+    bottom: 0;
+    margin: 24rpx;
+    border: 1px solid #ccc;
+    height: 100rpx;
+    width: 700rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

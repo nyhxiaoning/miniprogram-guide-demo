@@ -1,0 +1,37 @@
+<view>
+   <!-- <long-list-view 
+   id="list-view"
+      scrollY="{{ true }}" 
+      renderList="{{ renderList }}"
+      bindscrolltolower="handleScrolltolower"
+      bindscroll="handleScroll" 
+      generic:item="list-item"
+      generic:skeleton="list-skeleton"
+      containerHeight="{{containerHeight}}"
+   /> -->
+   <!-- <view class="query-index" bind:tap="handleQueryClick" >查询 Index</view> -->
+   <!-- <behaivor-component /> -->
+   <!-- <button bind:tap="handleRouteGo" >跳转下一个页面</button> -->
+   <!-- <slot-component>
+      <slot-test />
+   </slot-component> -->
+   <!-- <container >
+       <view>
+         <container-item >
+            <view>大前端跨端开发指南</view>
+         </container-item>
+       </view>
+   </container> -->
+   <!-- <modal />
+   <custom-button /> -->
+</view>
+
+<view>
+   <!-- 这个是 loading 元素 -->
+    <view wx:if="{{ loading }}"  style="height: 100vh;" class="loading"  >
+           loading...
+       </view>
+   <!-- 靶元素 -->
+   <view id="loading"  style="height: 1rpx;" />
+   <view> 真实内容 </view>
+</view>

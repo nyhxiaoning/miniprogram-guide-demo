@@ -1,0 +1,4 @@
+<view class="product" >
+   <view>商品卡片</view>
+   <view>数量：{{ count }}</view>
+</view>

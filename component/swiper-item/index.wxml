@@ -1,0 +1,5 @@
+<view class="swiper-item" style="width:{{ width }}px" > 
+    <view class="swiper-holder" >  
+         <slot />
+    </view>
+ </view>

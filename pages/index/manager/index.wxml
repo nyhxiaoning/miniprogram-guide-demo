@@ -1,0 +1,4 @@
+<view class="modal-container" wx:if="{{ visible }}" >
+    <view class="modal-mast" bind:tap="closeModal" ></view>
+    <view class="modal-text"  >{{ message }}</view>
+</view>

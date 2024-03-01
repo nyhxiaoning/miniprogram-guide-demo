@@ -1,0 +1,35 @@
+/**index.wxss**/
+.userinfo {
+  
+}
+
+.userinfo-avatar {
+
+}
+
+.usermotto {
+  width: 100vw;
+  height: 1000px;
+  background-color: rgb(193, 192, 255);
+  
+}
+.loading{
+  /* position: relative;
+  height: 100vh;
+  background-color: aqua; */
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+.query-index{
+   position: fixed;
+   height: 80rpx;
+   width: 80rpx;
+   border-radius: 40rpx;
+   background-color: darkcyan;
+   right: 20rpx;
+   bottom: 20rpx;
+   font-size: 16rpx;
+   line-height: 80rpx;
+   color: #fff;
+}

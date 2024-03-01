@@ -1,0 +1,11 @@
+<view>
+    <view>
+        <button bindtap="handleCleanCache" >清除曝光状态</button>
+        <button bindtap="handleRouterGO" >跳转验证生命周期</button>
+    </view>
+    <view class="card1" >card1</view> 
+    <view class="card2" >card2</view> 
+    <auto-report class="auto-report" show="{{ view.show }}" click="{{ view.click }}"  >
+        <view class="card3" >card3</view> 
+    </auto-report>
+</view>

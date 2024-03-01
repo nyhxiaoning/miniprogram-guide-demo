@@ -1,0 +1,4 @@
+<view bind:tap="handleClick" >
+    <text>大前端跨端开发实战指南</text>
+    <slot ></slot>
+</view>

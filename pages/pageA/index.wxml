@@ -1,0 +1,5 @@
+<view>
+  <view>页面A</view>
+  <product-cart pageType="页面A" />
+  <bottom-cart pageType="页面A" />
+</view>

@@ -1,0 +1,22 @@
+
+.card1{
+  height: 400px;
+  width: 100%;
+  color: #fff;
+  background-color: beige;
+}
+
+
+.card2{
+    height: 400px;
+    width: 100%;
+    color: #fff;
+    background-color: blueviolet;
+}
+
+.card3{
+    height: 400px;
+    width: 100%;
+    color: #fff;
+    background-color: cyan;
+}

@@ -1,0 +1,4 @@
+<view>
+    分包页面
+    <button bindtap="handleCallFun" >测试主包方法</button>
+</view>

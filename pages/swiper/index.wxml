@@ -1,0 +1,20 @@
+
+
+<view>
+    <my-swiper  bindchange="handleChange" id="my-swiper" >
+        <my-swiper-item>
+            <view class="item1">card-item1</view>
+        </my-swiper-item>
+        <my-swiper-item>
+            <view class="item2">card-item2</view>
+        </my-swiper-item>
+        <my-swiper-item>
+            <view class="item3">card-item2</view>
+        </my-swiper-item>
+    </my-swiper>
+
+    <view class="btns" >
+        <button class="btn" bindtap="slideToIndex" >跳转到指定位置</button>
+        <button class="btn" bindtap="getSwiperHeight" >获取设置当前 swiper-item 的宽度</button>
+    </view>
+</view>

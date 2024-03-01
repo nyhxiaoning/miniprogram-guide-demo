@@ -1,0 +1,36 @@
+.ask-question-container {
+    width:672rpx;
+    background:#ffffff;
+    border-radius: 20rpx;
+    border: 1px solid rgba(56, 56, 56, 1);
+    padding:40rpx;
+    box-sizing: border-box;
+    margin-left: 36rpx;
+   
+  
+    
+}
+
+.item {
+    padding: 20rpx 0;
+    border-top:2rpx solid #E5E5E5;
+}
+
+.box {
+    margin-bottom:20rpx;
+   
+}
+
+.title {
+    font-size: 36rpx;
+    font-weight: 500;
+    color: #000000;
+   } 
+   .sub-title {
+    font-weight:500;
+    margin-bottom:8rpx;
+   }
+   .cont {
+    font-size:24rpx;
+    margin-bottom:4rpx;
+   }

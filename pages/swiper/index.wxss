@@ -1,0 +1,15 @@
+.item1{
+    background-color: aqua;
+    height: 300px;
+}
+.item2{
+    background-color: blueviolet;
+    height: 350px;
+}
+.item3{
+    background-color: cornsilk;
+    height: 400px;
+}
+.btn{
+    font-size: 20rpx;
+}

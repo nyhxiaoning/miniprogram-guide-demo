@@ -1,0 +1,6 @@
+.product {
+    height: 300rpx;
+    width: 700rpx;
+    margin: 24rpx;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,4 @@
+<view class="botton-cart" >
+    <view>商品数量：{{ count }}</view>
+    <button bind:tap="addCart" >加购商品</button>
+</view>

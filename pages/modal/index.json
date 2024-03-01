@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+      "modal-view":"../../component/modal-view/index"
+    }
+  }

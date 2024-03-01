@@ -1,0 +1,22 @@
+<view class="content" >
+    弹窗页面
+    <modal-view 
+     modalID="custom-modal" 
+     modalStatus="{{modalStatus}}" 
+     bind:onCommonAction="handleModalCommonAction"
+     zIndex="{{10000}}"
+    >
+        <view style="height: 450rpx;" >自定义弹窗1</view>
+    </modal-view>
+    <modal-view 
+     modalID="custom-modal2" 
+     modalStatus="{{modalStatus}}" 
+     bind:onCommonAction="handleModalCommonAction"
+     zIndex="{{10000}}"
+     contentBackground="pink"
+    >
+        <view style="height: 450rpx;" >自定义弹窗2</view>
+    </modal-view>
+    <button bind:tap="handleOpenModal" >打开弹窗</button>
+    <button bind:tap="handleOpenModal2" >打开弹窗2</button>
+</view>

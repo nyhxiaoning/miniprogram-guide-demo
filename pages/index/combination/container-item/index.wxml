@@ -1,0 +1,5 @@
+<view>
+    <view>组合模式—内层组件{{ msg }}</view>
+    <slot />
+    <button bind:tap="handleClick" >向外层组件通信</button>
+</view>

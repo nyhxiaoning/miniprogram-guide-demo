@@ -1,0 +1,20 @@
+<view class="message">
+    <view class="message__wrap {{role === 'user' && 'message__layout--reverse'}} animate__animated animate__fadeInUp">
+        <view class="message__box message__box--{{role}}">
+            <text class="message__box--text" user-select wx:if="{{content}}">{{content}}</text>
+            <slot wx:else></slot>
+        </view>
+        <view class="message__avatar ">
+            <view wx:if="{{role === 'assistant'}}">
+                <view>
+                    <image style="width:28rpx;height:32rpx;" src="/assets/images/copy.png" data-content="{{content}}" bindtap="copyText"/>
+                </view>
+                <!-- <view>
+                    <image style="width:28rpx;height:32rpx;" src="/assets/images/export.png" data-content="{{content}}" bindtap="update"/>
+                </view> -->
+                    
+            </view>
+        </view>
+       
+    </view>
+</view>

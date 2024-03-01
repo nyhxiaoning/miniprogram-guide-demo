@@ -1,0 +1,4 @@
+<view style="height:{{height}}px;" class="skeleton-item" >
+    <view class="skeleton-image" ></view>
+</view>
+

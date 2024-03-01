@@ -1,0 +1,24 @@
+<view class="ask-question-container">
+    <view class="box">
+        <view class="title">
+            使用咒语提问调动魔法
+        </view>
+        <view class="sub-title">
+            4A咒语
+        </view>
+          <view class="cont">
+            Actor(角色)—Aim(目标)—Ask(要求)—Addition(补充)
+          </view>
+          <view class="sub-title">
+            4W咒语
+        </view>
+          <view class="cont">
+            What(我是)—Will(我想)—Who(我是)—Want(我要你)
+          </view>
+    </view>
+      
+   
+      <view  class="item" wx:for="{{contents}}" wx:key=index"  wx:if="{{ index < 2}}"  data-item="{{ item }}" bind:tap="handleItemClick" >
+        {{item}}
+    </view>
+</view>

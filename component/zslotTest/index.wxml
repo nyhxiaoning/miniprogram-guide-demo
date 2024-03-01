@@ -1,0 +1,9 @@
+<view>
+    测试插槽
+    <view wx:for="{{ arr }}"  wx:for-item="listItem"  wx:key="index" >
+        <slot />
+    </view>
+    <view wx:for="{{ arr }}"  wx:for-item="listItem"  wx:key="index" >
+        <slot />
+    </view>
+</view>

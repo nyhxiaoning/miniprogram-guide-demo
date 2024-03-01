@@ -1,0 +1,7 @@
+<view class="item" >
+   <image class="item-image" src="{{ item.giftImage }}"  />
+   <view class="item-view" >
+      <view class="item-name" >{{ item.giftName }}</view>  
+      <view class="item-price" >¥{{ item.price }}</view>  
+   </view>
+</view>

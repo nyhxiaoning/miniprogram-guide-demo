@@ -1,0 +1,30 @@
+.item{
+    height: 200rpx;
+    display: flex;
+    padding: 10px;
+}
+.item-image{
+    height: 200rpx;
+    width: 200rpx;
+    border-radius: 10rpx;
+    flex-shrink: 0;
+}
+.item-view{
+    flex:1;
+    margin-left: 24rpx;
+}
+.item-name{
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    word-break:break-all;
+    display: -webkit-box; 
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 30rpx;
+    font-size: 30rpx;
+    height: 56rpx;
+}
+.item-price{
+    transform: translate(0px,20px);
+    color: crimson;
+}
